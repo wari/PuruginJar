@@ -29,16 +29,16 @@ class PuruginJar
     purugin = Dir.glob("*")
     Dir.chdir(purugin[0])
     system("mvn clean package")
-		Dir.chdir("target")
-		jarfiles = File.join("**", "*.jar")
-		p = Dir.glob(jarfiles)[1]
-		File.rename(p, "Purugin.jar")
-		FileUtils.cp("Purugin.jar", "C:\\Github\\PuruginJar")
-		Dir.chdir("..")
-		Dir.chdir("..")
-		Dir.chdir("..")
-		FileUtils.rm_rf("purugin")
-		File.delete("purugin.zip")
+    Dir.chdir("target")
+    jarfiles = File.join("**", "*.jar")
+    p = Dir.glob(jarfiles)[1]
+    File.rename(p, "Purugin.jar")
+    FileUtils.cp("Purugin.jar", "C:\\Github\\PuruginJar")
+    Dir.chdir("..")
+    Dir.chdir("..")
+    Dir.chdir("..")
+    FileUtils.rm_rf("purugin")
+    File.delete("purugin.zip")
   end
     
 
@@ -67,7 +67,7 @@ class PuruginJar
   end
   
   def init
-	  puts "Script started.   Will begin checking for Purugin updates."
-	  check_for_updates
-	end
+    puts "Script started.   Will begin checking for Purugin updates."
+    check_for_updates
+  end
 end
