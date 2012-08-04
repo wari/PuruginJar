@@ -12,7 +12,7 @@ it in this repo, and update it.
 This is pretty bad code. It's mainly for my own use, but please submit a pull request and fix my hacky
 code.
 
-###### Todo:
+#### Todo:
 
 1. Use Github API instead of scraping page.
 2. Structure the script into a class.
