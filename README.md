@@ -3,7 +3,7 @@ PuruginJar
 
 ### What is this?
 
-The script in this repo checks for an update to the [Purugin]("http;//github.com/enebo/purugin")
+The script in this repo checks for an update to the [Purugin]("http://github.com/enebo/purugin")
 Repository. If it has changed, it will download it, use mvn(Compiler) to create the .jar file, and place
 it in this repo, and update it.
 
